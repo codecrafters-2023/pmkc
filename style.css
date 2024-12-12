@@ -1138,10 +1138,10 @@
     cursor: pointer;
 }
 
-.cta2_icons_inner_div i:hover {
+/* .cta2_icons_inner_div i:hover {
     background-color: #232331;
     color: #fff;
-}
+} */
 
 .cta2_right_img_div {
     height: 700px;
