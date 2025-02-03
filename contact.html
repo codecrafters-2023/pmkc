@@ -8,7 +8,7 @@
 
     <link rel="shortcut icon" href="./images/logo/logo12.png" type="image/x-icon">
     <link href="style.css" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -123,49 +123,52 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-7 col-lg-6 col-sm-12">
-                    <div class="form_heading">
-                        <span>Get In Touch</span>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6 col-sm-12">
-                            <div class="mb-3">
-                                <input name="form_name" class="form-control" type="text" placeholder="Enter Name"
-                                    id="name">
+                    <form action="mail.php" method="POST" class="input-label ajax-contact">
+                        <div class="form_heading">
+                            <span>Get In Touch</span>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-sm-12">
+                                <div class="mb-3">
+                                    <input name="form_name" class="form-control" type="text" placeholder="Enter Name"
+                                        id="name">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-sm-12">
+                                <div class="mb-3">
+                                    <input name="form_email" class="form-control required email" type="email" id="email"
+                                        placeholder="Enter Email">
+                                </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-sm-12">
-                            <div class="mb-3">
-                                <input name="form_email" class="form-control required email" type="email" id="email"
-                                    placeholder="Enter Email">
+                        <div class="row">
+                            <div class="col-sm-6 col-sm-12">
+                                <div class="mb-3">
+                                    <input name="form_subject" class="form-control required" type="text" id="subject"
+                                        placeholder="Enter Subject">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-sm-12">
+                                <div class="mb-3">
+                                    <input name="form_phone" class="form-control" type="text" placeholder="Enter Phone"
+                                        id="phone">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6 col-sm-12">
-                            <div class="mb-3">
-                                <input name="form_subject" class="form-control required" type="text" id="subject"
-                                    placeholder="Enter Subject">
-                            </div>
+                        <div class="mb-3">
+                            <textarea name="form_message" class="form-control required" rows="7" id="message"
+                                placeholder="Enter Message"></textarea>
                         </div>
-                        <div class="col-sm-6 col-sm-12">
-                            <div class="mb-3">
-                                <input name="form_phone" class="form-control" type="text" placeholder="Enter Phone"
-                                    id="phone">
-                            </div>
+                        <div class="mb-5">
+                            <button class="contact_button" type="submit" onclick="SendEmail()">Submit</button>
                         </div>
-                    </div>
-                    <div class="mb-3">
-                        <textarea name="form_message" class="form-control required" rows="7" id="message"
-                            placeholder="Enter Message"></textarea>
-                    </div>
-                    <div class="mb-5">
-                        <button class="contact_button" type="submit" onclick="SendEmail()">Submit</button>
-                    </div>
+                    </form>
                 </div>
                 <div class="col-xl-5 col-lg-6 col-sm-12">
                     <div class="contact-details__right">
                         <div class="contact_inner_div">
-                            <div class="contant_text">We’re here to help! Please fill out the form below, and we'll get back to you shortly.</div>
+                            <div class="contant_text">We’re here to help! Please fill out the form below, and we'll get
+                                back to you shortly.</div>
                         </div>
                         <ul class="contact-details__info">
                             <li>
@@ -175,9 +178,9 @@
                                 <div class="contact_text_div  contact_address_info">
                                     <h6 class="contact_heading1">Have Any
                                         Question?</h6>
-                                Pawandeep Singh (CEO) : <span>(916)-533-8656</span><br>
-                                Gurpreet Singh (CFO) : <span>(916)-826-4536</span><br>
-                                Jaskarn Johal (OM) : <span>(916)-710-1543</span>
+                                    Pawandeep Singh (CEO) : <span>(916)-533-8656</span><br>
+                                    Gurpreet Singh (CFO) : <span>(916)-826-4536</span><br>
+                                    Jaskarn Johal (OM) : <span>(916)-710-1543</span>
                                 </div>
                             </li>
                             <li style="margin-top: 30px;">
@@ -212,7 +215,10 @@
 
     <!-- Google Map  Start -->
     <section class="map-section">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3740.359810582935!2d-121.3966444854358!3d38.423335271032705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac72d565abfed%3A0x9b12c1ee47dac892!2s9245%20Laguna%20Springs%20Dr%2C%20Elk%20Grove%2C%20CA%2095758%2C%20USA!5e1!3m2!1sen!2sin!4v1733866256876!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3740.359810582935!2d-121.3966444854358!3d38.423335271032705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac72d565abfed%3A0x9b12c1ee47dac892!2s9245%20Laguna%20Springs%20Dr%2C%20Elk%20Grove%2C%20CA%2095758%2C%20USA!5e1!3m2!1sen!2sin!4v1733866256876!5m2!1sen!2sin"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     </section>
 
@@ -224,7 +230,8 @@
             <div class="footer_inner_div container">
                 <div class="footer_logo_div">
                     <img src="./images/logo/logo2.png" alt="">
-                    <p>PMKC Transport Inc. is dedicated to providing reliable and efficient transportation solutions tailored to your needs. </p>
+                    <p>PMKC Transport Inc. is dedicated to providing reliable and efficient transportation solutions
+                        tailored to your needs. </p>
                 </div>
 
                 <div class="footer_link">
@@ -250,7 +257,7 @@
                             <a href="contact.html">Contact</a>
 
                         </li>
-                        
+
                         <li style="display: flex; align-items: center;gap: 5px;">
                             <i class="fa-solid fa-arrow-right"></i>
                             <a href="carrier.html">Careers</a>
@@ -266,7 +273,7 @@
                         <li>
                             <span>
                                 <i class="fa-solid fa-location-dot"></i></span>
-                                9245 Laguna Springs Dr, Elk Grove, CA 95758<br />
+                            9245 Laguna Springs Dr, Elk Grove, CA 95758<br />
                             <!-- P.O.BOX #57046 HAYWARD,CA 94545 -->
                         </li>
                         <li>
@@ -292,29 +299,7 @@
     </div>
     <!--------------- Footer End---------------------->
 
-    <script>
-        function SendEmail() {
-            var params = {
-                from_name: document.getElementById("name").value,
-                email_id: document.getElementById("email").value,
-                message: document.getElementById("message").value,
-                subject: document.getElementById("subject").value,
-                phone: document.getElementById("phone").value,
-            }
-
-            emailjs.send("service_3amvf5g", "template_q21uto4", params).then(function (response) {
-                alert("Sucessfully sent");
-            })
-
-            document.getElementById("name").value = "",
-                document.getElementById("email").value = "",
-                document.getElementById("message").value = "",
-                document.getElementById("subject").value = "",
-                document.getElementById("phone").value = ""
-        }
-
-
-    </script>
+    <script src="js/script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
